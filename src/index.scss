@@ -1,0 +1,279 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f6;
+}
+
+.app {
+  width: 100%;
+}
+
+#root {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  height: 300px;
+  justify-content: space-around;
+  background: no-repeat #838a94;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 1100px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.content-section {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  box-sizing: border-box;
+  &:first-of-type {
+    display: flex;
+    flex-grow: 9;
+    flex-shrink: 0;
+  }
+  &:last-of-type {
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+}
+
+.logo {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  background: 0 70% no-repeat url("./pic/ahoyla_logo.png");
+  background-size: 100%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.breadcrumbs__link {
+  margin-right: 5px;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.task-title {
+  margin: 5px 0 0 0;
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.task-window {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.player {
+  display: flex;
+  height: 70px;
+  margin: 30px 0;
+  background: no-repeat #838a94;
+}
+
+.test-header {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.test-header__title {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.test-info {
+  display: flex;
+  color: #838a94;
+  text-align: left;
+}
+
+.test-info__icon {
+  display: flex;
+  width: 24px;
+  background: no-repeat url("./pic/info-circle-solid.png");
+  background-position: 0 40%;
+  background-size: 100%;
+}
+
+.test-info__text {
+  margin-left: 16px;
+}
+
+.test-form-window {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.test-form {
+  display: flex;
+}
+
+.test-form-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-basis: 50%;
+  color: #000;
+  background: #f8f8f6;
+}
+
+.test-field {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  align-items: flex-end;
+  color: #484140;
+  border-bottom: 1px dotted #484140;
+}
+
+.example-answer {
+  display: flex;
+  flex-grow: 0.1;
+  margin: 0 0 5px 5px;
+  padding: 0 0 0 5px;
+  border-bottom: 2px solid #484140;
+}
+
+.example-logo-wpapper {
+  display: flex;
+  flex-grow: 10;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.example-logo {
+  display: flex;
+  height: 23px;
+  width: 55px;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: #fff;
+  background: #f06a22;
+}
+
+.test-field__hint {
+  display: flex;
+  margin: 0 0 5px 5px;
+}
+
+.test-field-input {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 0 5px 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #de5f66;
+  border: none;
+  border-bottom: 2px solid #484140;
+  background: #f8f8f6;
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #3898ec;
+  }
+}
+
+.test-label-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-basis: 50%;
+  margin-right: 10px;
+  color: #484140;
+  background: #f1f1ef;
+}
+
+.text-label-wrapper {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  align-items: flex-end;
+  border-bottom: 1px dotted #484140;
+}
+
+.text-label {
+  display: flex;
+  margin: 0 0 5px 5px;
+}
+
+.test-input__text {
+  display: flex;
+  height: 50%;
+}
+
+.test-results {
+  display: flex;
+  margin-top: 48px;
+  visibility: hidden;
+}
+
+.form-controls {
+  display: flex;
+}
+
+.check-button {
+  display: flex;
+  color: #f1f1ef;
+  padding: 10px 24px;
+  margin: 4px 16px 4px 0;
+  border-radius: 40px;
+  font-size: 1rem;
+  line-height: 100%;
+  justify-content: center;
+  border: none;
+  background: #4c87c7;
+}
+
+.show-button,
+.clear-button {
+  display: flex;
+  color: #4c87c7;
+  padding: 10px 24px;
+  margin: 4px 16px 4px 0;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 100%;
+  border: none;
+  background: #f8f8f6;
+  height: 60;
+}
